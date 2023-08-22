@@ -1,0 +1,187 @@
+https://codeshare.io/G3
+
+https://www.youtube.com/playlist?list=PLAC325451207E3105
+
+static void Main(string[] args)
+{
+    //float,int, double, char, string
+    Console.WriteLine("Please Enter your name");
+    string name = Console.ReadLine();
+    Console.WriteLine("Hello "+name);
+    Console.WriteLine($"Hello {name}");
+    Console.ReadKey();//Just to make the console wait for user key stroke
+}
+
+--------------------------------------------------------
+internal class Program
+{
+    int number1, number2;
+    void TakeTwoNumbers()
+    {
+        Console.WriteLine("Please enter the first number ");
+        number1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Please enter the second number ");
+        number2 = Convert.ToInt32(Console.ReadLine());
+    }
+    int Add(int n1,int n2)
+    {
+        return n1 + n2;
+    }
+    void CalculateAndPrint()
+    {
+        TakeTwoNumbers();
+        int result = Add(number1, number2);
+        Console.WriteLine($"The sum of {number1} and {number2} is {result}");
+    }
+    static void Main(string[] args)
+    {
+        Program program = new Program();
+        program.CalculateAndPrint();
+
+        //Ensure the bellow is the last line in the main method. Since it is used to make teh output window stay put
+        Console.ReadKey();//Just to make the console wait for user key stroke
+    }
+}
+-----------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstApp
+{
+    internal class ManageEmployee
+    {
+        public Employee CreateEmployeeByTakingDetailsFromConsole()
+        {
+            Employee employee = new Employee();
+            Console.WriteLine("Please enter the employee ID");
+            employee.Id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the employee Name");
+            employee.Name = Console.ReadLine();
+            Console.WriteLine("Please enter the employee Age");
+            employee.Age = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Please enter the employee Phone");
+            employee.Phone = Console.ReadLine();
+            Console.WriteLine("Please enter the employee Salary");
+            employee.Salary = Convert.ToDouble(Console.ReadLine());
+            return employee;
+        }
+        public void PrintEmployeeDetails(Employee employee)
+        {
+            Console.WriteLine("Employee Id :" + employee.Id);
+            Console.WriteLine("Employee Name :" + employee.Name);
+            Console.WriteLine($"Employee Age :  {employee.Age}");
+            Console.WriteLine($"Employee Phone :  {employee.Phone}");
+            Console.WriteLine($"Employee Salary :  ${employee.Salary}");
+        }
+    }
+}
+-------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstApp
+{
+    internal class Employee
+    {
+        ////private
+        //int id;
+
+
+        ////Property
+        //public int Id { 
+        //    get { return id; } 
+        //    set { id = value; } 
+        //}
+
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public float Age { get; set; }
+        public string Phone { get; set; }
+        public double Salary { get; set; }
+    }
+}
+----------------------------------------------
+namespace FirstApp
+{
+    internal class Program
+    {
+        int number1, number2;
+        void TakeTwoNumbers()
+        {
+            Console.WriteLine("Please enter the first number ");
+            number1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the second number ");
+            number2 = Convert.ToInt32(Console.ReadLine());
+        }
+        int Add(int n1,int n2)
+        {
+            return n1 + n2;
+        }
+        void CalculateAndPrint()
+        {
+            TakeTwoNumbers();
+            int result = Add(number1, number2);
+            Console.WriteLine($"The sum of {number1} and {number2} is {result}");
+        }
+        static void Main(string[] args)
+        {
+            //Program program = new Program();
+            //program.CalculateAndPrint();
+            ManageEmployee manageEmployee = new ManageEmployee();
+            Employee employee = manageEmployee.CreateEmployeeByTakingDetailsFromConsole();
+            manageEmployee.PrintEmployeeDetails(employee);
+
+            //Ensure the bellow is the last line in the main method. Since it is used to make teh output window stay put
+            Console.ReadKey();//Just to make the console wait for user key stroke
+        }
+    }
+}
+-----------------------------------
+           List<int> numbers = new List<int>();
+           numbers.Add(1);
+           numbers.Add(100);
+           numbers.Add(30);
+           numbers.Add(100);
+           numbers.Remove(30);
+           foreach (int num in numbers)
+           {
+               Console.WriteLine(num);
+           }
+
+
+
+
+
+
+CRUD
+   Create
+   Read
+   Update
+   Delete
+
+PizzaApplication
+   Add Pizzas to collection/Add pizza to cart
+   Show the Pizzas - Display for purchase
+   Udpate prize/quanity
+   Remove - Delete from cart
+
+Welcome
+Un&Pass
+|
+- user 
+    View Pizzas
+    Add pizza to cart
+    Update cart - > Add more item/ Delete item
+    Buy
+- admin
+    Add pizzas to stock
+    Update pizza price
+
+Pizza - Id, Name, Price, Quantity, Type(Veg/NonVeg)
+Cart
