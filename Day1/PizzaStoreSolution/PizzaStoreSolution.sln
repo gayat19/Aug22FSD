@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStoreApp", "PizzaStoreApp\PizzaStoreApp.csproj", "{645F68B1-474C-4111-B47C-661AA2BF0C98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaStoreApp", "PizzaStoreApp\PizzaStoreApp.csproj", "{645F68B1-474C-4111-B47C-661AA2BF0C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStoreModelLibrary", "PizzaStoreModelLibrary\PizzaStoreModelLibrary.csproj", "{F662EFB8-0B28-41FF-8F1C-9063C6F51AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStoreDALLibrary", "PizzaStoreDALLibrary\PizzaStoreDALLibrary.csproj", "{E928D4EC-C4AF-4C66-AAD7-F9D790750B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStoreBLLibrary", "PizzaStoreBLLibrary\PizzaStoreBLLibrary.csproj", "{B3DF9FD9-94AA-4C37-A983-79E1103A941C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{645F68B1-474C-4111-B47C-661AA2BF0C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{645F68B1-474C-4111-B47C-661AA2BF0C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{645F68B1-474C-4111-B47C-661AA2BF0C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F662EFB8-0B28-41FF-8F1C-9063C6F51AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F662EFB8-0B28-41FF-8F1C-9063C6F51AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F662EFB8-0B28-41FF-8F1C-9063C6F51AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F662EFB8-0B28-41FF-8F1C-9063C6F51AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E928D4EC-C4AF-4C66-AAD7-F9D790750B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E928D4EC-C4AF-4C66-AAD7-F9D790750B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E928D4EC-C4AF-4C66-AAD7-F9D790750B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E928D4EC-C4AF-4C66-AAD7-F9D790750B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3DF9FD9-94AA-4C37-A983-79E1103A941C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3DF9FD9-94AA-4C37-A983-79E1103A941C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3DF9FD9-94AA-4C37-A983-79E1103A941C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3DF9FD9-94AA-4C37-A983-79E1103A941C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

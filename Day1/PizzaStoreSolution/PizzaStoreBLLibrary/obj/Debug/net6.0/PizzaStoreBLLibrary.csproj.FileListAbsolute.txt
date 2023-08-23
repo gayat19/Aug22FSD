@@ -1,0 +1,17 @@
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\bin\Debug\net6.0\PizzaStoreBLLibrary.deps.json
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\bin\Debug\net6.0\PizzaStoreBLLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\bin\Debug\net6.0\PizzaStoreBLLibrary.pdb
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\bin\Debug\net6.0\PizzaStoreDALLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\bin\Debug\net6.0\PizzaStoreModelLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\bin\Debug\net6.0\PizzaStoreDALLibrary.pdb
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\bin\Debug\net6.0\PizzaStoreModelLibrary.pdb
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.csproj.AssemblyReference.cache
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.AssemblyInfoInputs.cache
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.AssemblyInfo.cs
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.csproj.CoreCompileInputs.cache
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.csproj.CopyComplete
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\refint\PizzaStoreBLLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\PizzaStoreBLLibrary.pdb
+E:\Corp\Cognixia\22Aug2023\Participants\Day1\PizzaStoreSolution\PizzaStoreBLLibrary\obj\Debug\net6.0\ref\PizzaStoreBLLibrary.dll

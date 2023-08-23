@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaStoreBLLibrary\PizzaStoreBLLibrary.csproj" />
+    <ProjectReference Include="..\PizzaStoreModelLibrary\PizzaStoreModelLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
