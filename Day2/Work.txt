@@ -18,3 +18,7 @@ protected
 internal
 internal protected
 private protected
+
+https://dev.to/genichm/design-patterns-with-examples-in-c-2588
+
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions

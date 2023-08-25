@@ -1,0 +1,11 @@
+Create a application that will take doctor details
+Id,Name, Years of Experiance and Specialization 
+
+Collect all the doctor information store it in a collection
+Display the doctor detaisl to patients based on menu selction
+1) Doctors by speciality
+2) Doctors by experiance
+
+Use 3tier architecture
+Ensure you model the class with all the appropriate methods and properties
+Implement Repository Pattern

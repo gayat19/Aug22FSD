@@ -1,0 +1,138 @@
+Select
+  Where
+    In,Between, And,Or
+  Functions
+  Group By
+  Having
+  Order By
+---
+Sub Queries
+  Correlated,NonCorelated
+-----
+Joins
+  Inner,Outer,Cross
+------------------------------------------------------------
+-----------------------------------
+
+
+Group By
+
+13) Average length of film for every rating
+
+select * from film
+
+select * from film where rental_rate=4.99
+
+select * from film where title = 'Airport Pollock'
+
+select * from film where description like '%Epic%'
+
+select * from film where title like '__i%'
+
+select * from film where special_features is not null
+
+select * from film where rental_duration >= 5 and rental_duration <= 7
+select * from film where rental_duration between 5 and 7
+
+select * from film where rental_duration = 5 or rental_duration = 7 or rental_duration=9
+--in a list
+select * from film where rental_duration in (5,7,9)
+
+
+--unique values
+select distinct(rental_duration) from film
+select distinct(rental_duration,rental_rate) from film
+
+
+--
+select sum(rental_rate) sum_of_Rantal from film;
+select avg(rental_rate) average_of_Rantal from film;
+select floor(avg(rental_rate)) as average_of_Rantal  from film;
+select min(rental_rate) minimum_of_Rantal from film;
+select max(rental_rate) maximum_of_Rantal from film;
+select count(rental_rate) count_of_Rantal from film;
+
+
+select count(rental_rate) count_of_Rental, max(rental_rate) maximum_of_Rental from film;
+
+--wrong query
+select count(rental_rate) count_of_Rantal, title from film;
+
+select sum(amount) from payment where customer_id=341
+
+select  * from payment
+
+select customer_id,sum(amount) from payment group by customer_id
+
+select rating,avg(length) from film group by rating
+
+
+select rating,avg(length) from film group by rating  having avg(length)>115
+
+select * from film where rental_rate>2
+
+select rating,avg(length) from film where rental_rate>2 group by rating having avg(length)>115
+
+select * from film order by film_id
+
+select * from film order by film_id desc
+
+select * from film order by length, rating
+
+select * from film order by length desc, rating
+
+select * from film where rating = 'G' order by length
+
+select rating, avg(length) from film group by rating order by rating
+select rating, avg(length) from film group by rating order by 1
+
+select rating, avg(length) from film where rental_rate>2 group by rating 
+having avg(length)>115 order by 1
+
+select * from customer
+
+select * from payment
+
+select customer_id from customer where first_name like 'J%'
+
+select * from payment where customer_id in
+(select customer_id from customer where first_name like 'J%')
+
+select * from customer where address_id in
+(select Address_id from address where district = 'California')
+
+select * from address
+
+--select the payment details of customers who have teh word 'street' in their addresss
+select * from payment where customer_id in
+(select customer_id from customer where address_id in
+(select address_id from address where address like '%Street%'))
+
+--print the sum of all the amount paid by every customer who comes from 'California'
+select customer_id, sum(amount) from payment
+where customer_id in (select customer_id from customer where address_id in
+(select address_id from address where district = 'California'))
+group by customer_id order by 1
+
+1) Select all data from teh payment table
+2) Select paymentid, amount and date from payment table
+3) select the aveare amount paid from teh payment table
+4) select the unique city_id in address
+5) select the payments which are inbetween 2 and 5
+6) select the unique dates in which payments have been made
+7) select the distritcs that have the char 'a' in them
+8) select the first rental_date from the rental table
+9) select the highest amount paid from teh paymeny table
+10) select the username and password of all the staff 
+11) Select the average duration for the movie released in 2006
+12) select the sum of amount paid by customer 341
+13) print the name name of the actors who have acteed in film that are of rating 'G'
+
+https://postgrespro.com/docs/postgrespro/15/index
+			
+
+			
+
+
+
+

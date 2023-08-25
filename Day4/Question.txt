@@ -1,0 +1,19 @@
+1) Print all the Actor details
+2) Print all teh staff details
+3) Print the number of films acted by every actor
+4) Print the city name for cities that have 'a nd e in their address
+5) Print the customer name of customer who have rented films that have the  length >2
+6) print the film names of film that have length greater than the average length of all the films
+7) Prin the fims ordered by the rating
+8) print the average_rental amount of every rating ordered by the rating
+9) print the actor name of those actor who have acted in film that starts with 'The' in teh title
+10) Print the city name of those cities from which the customer who have rented movies that are rated 'G'
+11) Count the number of films in every category
+12)print the name and usernames of staff who have processed the payment of those customer who come from the same dristricts as the customer who have rented the movie acted by the actors who have 'J' in teh begining of their first name
+
+
+
+
+
+
+

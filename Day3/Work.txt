@@ -1,0 +1,193 @@
+RDBMS
+Normalization
+   1,2,3
+DDL
+DML
+
+Store
+   Customer details
+   Product Details
+   Suppliers
+   Bill
+
+Entity
+  Strong
+  Weak
+
+Keys
+  Primary
+  Foreign
+  Candidate
+  Alternate
+
+Attributes
+  Simple
+  Derived 
+  Muti Valued
+  Complex
+
+1NF
+  Primary
+  Column - same datatype
+  No Muti Valued attributes
+
+2NF
+  1NF
+  No Parial Dependency((a,b)=>c)
+Partial Dependency
+  (a,b)=>(a=>c)
+
+3NF
+ 2NF
+ Nop Transitive Dependency(A<=B,A<=C)
+ Transitive Dependency - (A<=B<=C)
+
+--------------------------------------------------
+DDL
+  Create
+  Alter
+  Drop
+  Truncate
+
+Create table Skills
+(skill varchar(20),
+description varchar(200));
+
+\d Skills
+
+select table_name,column_name,data_type from information_schema.columns where table_name = 'skills';
+
+drop table skills
+
+Create table Skills
+(skill varchar(20) primary key,
+description varchar(200));
+
+
+alter table Skills
+add year int;
+
+ALTER TABLE skills alter column year TYPE char(4);
+
+ALTER TABLE skills alter column year SET NOT Null;
+
+create table Areas
+(area varchar(20) primary key,
+zipcode varchar(8));
+
+
+create table Employees
+(id int GENERATED ALWAYS AS IDENTITY,
+name varchar(50) not null,
+phone varchar(15),
+area varchar(20) references Areas(area));
+
+alter table Employees
+add constraint pk_empid primary key(id);
+
+DML
+insert into Areas(area,zipcode) values('ABC','123456');
+insert into Areas(area,zipcode) values('ABC','654321');XXXX
+insert into Areas(area,zipcode) values('EFG','123456');
+insert into Areas(zipcode) values('123456');XXXXX
+insert into Areas(area) values('XYZ');
+insert into Areas values('HHH','654321');
+
+insert into Employees(name,phone,area) values('Ramu','1234567890','ABC');
+insert into Employees(name,phone,area) values('Somu','9876543210','ABC');
+insert into Employees values('Kimu','1122334455','XYZ');XXXXX
+insert into Employees values(default,'Kimu','1122334455','XYZ');XXXXX
+insert into Employees(id) values('Kimu','1122334455','XYZ');XXXXX
+
+insert into Employees values(default,'Kimu','1122334455','XYZ');XXXXX
+insert into Employees values(default,'Kimu','1122334455','UUU');XXXXX
+
+--------------------------------------------------
+Update Employees set area = 'HHH';
+
+Update Employees set area = 'ABC' where id =1;
+Update Employees set area = 'EFG' where id = 2;
+Update Employees set area = 'XYZ' where id = 3;
+
+Update Employees set area = 'XYZ',phone='2233445566' where id = 3;
+
+------------------------------------------------
+
+Delete from Employee where id = 3;
+Delete from Areas where area='EFG';XXXXX(Coz 'EFG' is present in child table/ has child record)
+
+---------------------
+
+Create table Skills
+(skill varchar(20),
+description varchar(200));
+
+
+Create  table EmployeesSkills
+(Employee_id int,
+Skill_name varchar(20),
+Skill_Level int,
+primary key(Employee_id,Skill_Name));
+
+drop table EmployeesSkills;
+
+Create  table EmployeesSkills
+(Employee_id int,
+Skill_name varchar(20),
+Skill_Level int,
+primary key(Employee_id,Skill_Name),
+constraint fk_empSkill Foreign key(Employee_id) references Employees(id),
+constraint fk_skillEmp Foreign key(Skill_name) references Skills(Skill));
+
+----------------------------
+https://www.postgresqltutorial.com/postgresql-sample-database/
+
+--select all columns
+Select * from Customer
+--select specific column
+Select first_name,last_name from Customer
+--select specific colum and use function
+Select concat(first_name,' ',last_name) from customer
+
+--alias column name
+Select first_name Firstname,last_name LatName from Customer
+Select concat(first_name,' ',last_name) FullName from customer
+
+select * from customer where activebool = 'false'
+
+--Restricting teh number of rows
+select * from film where rating = 'G'
+
+select * from film where rating = 'G' or rating = 'R'
+
+select * from film where rating = 'G' and length>100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
