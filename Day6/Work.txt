@@ -1,0 +1,23 @@
+SPA
+
+MVC Core - ASP - C#
+Web API Core - ASP - C# - BL
+
+
+Angular Application - TypeScript - FE
+
+
+CRUD
+
+MVC - Model-View-Controller
+
+Model 		- Data
+View  		- User Interface
+Controller 	- Control the flow of data to view and decide the view(Action methods)
+
+Services
+   BL
+
+Repository
+   DAL
+
