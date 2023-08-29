@@ -16,7 +16,7 @@ o	Bronze Members:
  
 
 
-Question3
+Question2
 ( A little more abstract case )
 Create an ER Diagram for a student registration system where the entities are Students, Instructors, Courses and Schedules. Consider all the possible pairings. (Given not in statements form, but in a summarized way)
 
