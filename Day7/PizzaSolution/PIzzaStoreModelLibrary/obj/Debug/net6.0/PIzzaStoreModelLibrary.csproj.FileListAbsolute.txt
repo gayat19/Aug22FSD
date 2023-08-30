@@ -1,0 +1,11 @@
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\bin\Debug\net6.0\PIzzaStoreModelLibrary.deps.json
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\bin\Debug\net6.0\PIzzaStoreModelLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\bin\Debug\net6.0\PIzzaStoreModelLibrary.pdb
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.AssemblyInfoInputs.cache
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.AssemblyInfo.cs
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.csproj.CoreCompileInputs.cache
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\refint\PIzzaStoreModelLibrary.dll
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.pdb
+E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\ref\PIzzaStoreModelLibrary.dll

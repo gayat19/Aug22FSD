@@ -1,0 +1,189 @@
+CRUD
+
+Collection -> Controller -> View
+   ViewBag, Model
+
+Collection -> Repo -> Controller -> View
+
+Collection -> Repo -> Service -> Controller -> View
+
+Pizza List view - GET
+Pizza Details - GET
+Create/Insert new Pizza - POST -> Sending data
+Edit Pizza details
+Delete a pizza
+
+Dependency Injection
+  Scoped(One per request), Singleton(one object for all-Injection and request), Transient(one per injection)
+
+
+
+
+
+------------------------------
+namespace PIzzaStoreModelLibrary
+{
+    public class Pizza: IEquatable<Pizza>, IComparable<Pizza>
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public int Quantity { get; set; }
+        public double Price { get; set; }
+        public string? Type { get; set; }
+
+        #region PizzaToStringMethod
+
+        /// <summary>
+        /// When reff of Pizza object is used for printing this method will print the details of
+        /// the properties
+        /// </summary>
+        /// <returns>Stringtaht hold details of pizza name,pricenquantity and type</returns>
+        public override string ToString()
+        {
+            return $"Pizza Id : {Id} \n " +
+                $"Pizza Name : {Name} \n" +
+                $"Pizza Price : Rs.{Price} \n" +
+                $"Pizza Quantity : {Quantity} \n" +
+                $"Pizza Type : {Type}";
+        }
+        #endregion
+
+        #region PizzaEqualsMethod
+        /// <summary>
+        /// Checks if 2 Pizza objects are equal basedon the ID of the Pizza
+        /// </summary>
+        /// <param name="other">Takes the pizza object that has to be compares</param>
+        /// <returns>Will be true if teh Ids are same otherwise false</returns>
+        public bool Equals(Pizza? other)
+        {
+            Pizza p1, p2;
+            p1 = other??new Pizza();//If parameter is null then it will create a new object
+            p2 = this;
+            if (p1.Id == p2.Id)
+                return true;
+            return false;
+        }
+        #endregion
+
+        #region PizzaCompareToMethod
+        /// <summary>
+        /// Method that is called while teh objects are sorted
+        /// </summary>
+        /// <param name="other">Pizza object that has to be compared gets passed</param>
+        /// <returns>integer based on the id of the pizza is greater or not</returns>
+        public int CompareTo(Pizza? other)
+        {
+            Pizza p1, p2;
+            p1 = this;
+            p2 = other??new Pizza();
+            return p1.Id.CompareTo(p2.Id);
+        }
+        #endregion
+    }
+}
+-------------------------------------
+using Microsoft.AspNetCore.Mvc;
+using PIzzaStoreModelLibrary;
+
+namespace PizzaStoreApp.Controllers
+{
+    public class PizzaController : Controller
+    {
+        static List<Pizza> pizzas = new List<Pizza>()
+        {
+            new Pizza{Id=1,Name="Schezwan Margherita", Price=389,Quantity=3,Type="Non-Veg"},
+            new Pizza{Id=2,Name="Ultimate Tandoori Veggie", Price=609,Quantity=2,Type="Veg"}
+        };
+        public IActionResult Index()
+        {
+            ViewBag.Pizzas = pizzas;
+            return View();
+        }
+    }
+}
+@* @foreach (var pizza in ViewBag.Pizzas)
+{
+    <div class="alert alert-secondary">
+        <h2>@pizza.Name</h2>
+        <p>The Pizza is @pizza.Type and only @pizza.Quantity left</p>
+        <br>
+        Buy for $@pizza.Price
+    </div>
+}
+ *@
+ @* ------------------------------- *@
+
+@* Strogly bind my view with mode *@
+
+@model IEnumerable<PIzzaStoreModelLibrary.Pizza>
+
+@foreach(var pizza in Model)
+{
+    <div class="alert alert-secondary">
+        <h2>@pizza.Name</h2>
+        <p>The Pizza is @pizza.Type and only @pizza.Quantity left</p>
+        <br>
+        Buy for $@pizza.Price
+    </div>
+}
+
+using PIzzaStoreModelLibrary;
+
+namespace PizzaStoreApp.Models
+{
+    public class PizzaWithPic :Pizza
+    {
+        public string Pic { get; set; }
+    }
+}
+using Microsoft.AspNetCore.Mvc;
+using PizzaStoreApp.Models;
+using PIzzaStoreModelLibrary;
+
+namespace PizzaStoreApp.Controllers
+{
+    public class PizzaController : Controller
+    {
+        static List<PizzaWithPic> pizzas = new List<PizzaWithPic>()
+        {
+            new PizzaWithPic{Id=1,Name="Schezwan Margherita", Price=389,Quantity=3,Type="Non-Veg",Pic="/images/Pizza1.jpeg"},
+            new PizzaWithPic{Id=2,Name="Ultimate Tandoori Veggie", Price=609,Quantity=2,Type="Veg" ,Pic="/images/Pizza2.jpeg"}
+        };
+        public IActionResult Index()
+        {
+            //ViewBag.Pizzas = pizzas;
+            //return View();
+            return View(pizzas);
+        }
+    }
+}
+@* @foreach (var pizza in ViewBag.Pizzas)
+{
+    <div class="alert alert-secondary">
+        <h2>@pizza.Name</h2>
+        <p>The Pizza is @pizza.Type and only @pizza.Quantity left</p>
+        <br>
+        Buy for $@pizza.Price
+    </div>
+}	
+ *@
+ @* ------------------------------- *@
+
+@* Strogly bind my view with mode *@
+
+@model IEnumerable<PizzaStoreApp.Models.PizzaWithPic>
+
+@foreach(var pizza in Model)
+{
+    <div class="card" style="width: 18rem;float:left;margin:2px;">
+        <h2 style="text-align:center;" class="alert alert-info">@pizza.Name</h2>
+        <img height="200" width="200" class="card-img-top" src="@pizza.Pic" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">The Pizza is @pizza.Type and only @pizza.Quantity left</p>
+        </div>
+    </div>
+}
+
+
+
+

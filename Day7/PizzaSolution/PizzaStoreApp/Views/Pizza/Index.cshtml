@@ -1,0 +1,32 @@
+﻿@* @foreach (var pizza in ViewBag.Pizzas)
+{
+    <div class="alert alert-secondary">
+        <h2>@pizza.Name</h2>
+        <p>The Pizza is @pizza.Type and only @pizza.Quantity left</p>
+        <br>
+        Buy for $@pizza.Price
+    </div>
+}
+ *@
+ @* ------------------------------- *@
+
+@* Strogly bind my view with mode *@
+
+@model IEnumerable<PizzaStoreApp.Models.PizzaWithPic>
+
+@foreach(var pizza in Model)
+{
+    <div class="card" style="width: 18rem;float:left;margin:2px;">
+        <h2 style="text-align:center;" class="alert alert-info">
+            @pizza.Name
+            <span><a asp-controller="Pizza" asp-action="Delete" asp-route-id="@pizza.Id" type="button" class="btn btn-danger">-</a></span>
+        </h2>
+        <img height="200" width="200" class="card-img-top" src="@pizza.Pic" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">The Pizza is @pizza.Type and only @pizza.Quantity left</p>
+        </div>
+        <a asp-controller="Pizza" asp-action="Details" asp-route-id="@pizza.Id" class="btn btn-primary">View Details</a>
+    </div>
+}
+
+

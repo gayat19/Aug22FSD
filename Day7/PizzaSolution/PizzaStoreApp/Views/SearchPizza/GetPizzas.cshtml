@@ -1,0 +1,47 @@
+﻿@model PizzaStoreApp.Models.DTO.PriceRangeDTO
+
+@{
+    ViewData["Title"] = "GetPizzas";
+}
+<h1>Search Pizza</h1>
+<form asp-action="GetPizzas">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Minimum" class="control-label"></label>
+        <input asp-for="Minimum"class="form-control" />
+        <span asp-validation-for="Minimum" class="text-danger"></span>
+        <label asp-for="Maximum" class="control-label"></label>
+        <input asp-for="Maximum" class="form-control" />
+        <span asp-validation-for="Maximum" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <link href="e:\corp\cognixia\22aug2023\participants\day7\pizzasolution\pizzastoreapp\views\shared\_layout.cshtml.css" rel="stylesheet" />
+        <a href="e:\corp\cognixia\22aug2023\participants\day7\pizzasolution\pizzastoreapp\views\shared\_layout.cshtml">e:\corp\cognixia\22aug2023\participants\day7\pizzasolution\pizzastoreapp\views\shared\_layout.cshtml</a>
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+</form>
+<hr />
+@foreach (var pizza in Model.SearchedPizzas)
+{
+    <div class="card" style="width: 18rem;float:left;margin:2px;">
+        <h2 style="text-align:center;" class="alert alert-info">
+            @pizza.Name
+            <span><a asp-controller="Pizza" asp-action="Delete" asp-route-id="@pizza.Id" type="button" class="btn btn-danger">-</a></span>
+        </h2>
+        <img height="200" width="200" class="card-img-top" src="@pizza.Pic" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">The Pizza is @pizza.Type and only @pizza.Quantity left</p>
+        </div>
+        <a asp-controller="Pizza" asp-action="Details" asp-route-id="@pizza.Id" class="btn btn-primary">View Details</a>
+    </div>
+}
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
+
+
+
