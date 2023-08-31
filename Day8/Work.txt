@@ -1,0 +1,63 @@
+Database connection
+   Code First approch
+   Database First approch
+
+
+
+ORM -> Object Relation Mapping
+
+Banckend -> Coding -> Class+Object(Properties)
+Database -> SQL -> Table+Rows(Atributes)
+
+
+Collection-> Table
+Object -> Row
+Properties -> attributes
+Add() -> Insert
+Change value of property -> Update
+Remove() -> Delete
+Iteration -> Select
+
+Entity Framework - Microsoft ORM
+Dapper -> Micro ORM
+
+Create a database 
+  Class -> Collection of object -> Table
+
+
+Install Packages
+Npgsql.EntityFrameworkCore.PostgreSQL -> 6.0.8
+Microsoft.EntityFrameworkCore.Design -> 6.0.21
+Microsoft.EntityFrameworkCore.Tools -> 6.0.21
+Microsoft.EntityFrameworkCore -> 6.0.21
+
+
+Create Models
+
+Add-Migration <migrationname>
+Update-Database
+
+-------------------------
+
+Start project and do from the start
+Doctor
+Patient
+Appoitment
+---------------------------------
+Include the edit and delete functionalities for both employee and department
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
