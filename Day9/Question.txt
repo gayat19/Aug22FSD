@@ -1,0 +1,31 @@
+MVC
+
+Doctor - id,name,exp(int),Speciality,Phone,email,Pic
+
+Patient - id,name,age,phone,email
+
+Appointment -appoitmentNumber, doctorid,patientid,date+time
+
+9-11
+   Create the appilication
+   create the models
+     Ensure relational integrity
+   apply migration 
+   Seed/Initialize data - > Context
+
+
+11-12
+   Repository - Doctor patient and appointments
+   Interface -> Generic
+
+12-2:30
+   Service
+      DoctorService -> adding doctor, Updating Doctor Exp, Updating doctor Speciality, Updating Doctor phone
+      PatientServic-> AddPatient, UpdatePatientPhone
+      AppointmentService->BookAppointment, CancelAppointment,CheckAvailbility
+       
+ 2:30 - 4
+   Controller+View
+	Doctor -> Get+POST -> Add, Update(3 Methods)
+        Patient -> GET+POST -> ADD,Update(1)
+        Appointment -> GET+POST -> ADD, GET -> Check Availability, GET+POST -> CancelAppointmnet
