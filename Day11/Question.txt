@@ -1,0 +1,13 @@
+Create an application that will
+
+* Allow user to login
+* Once Logged in can view Employee details
+* Employee Phone neumber can be updated
+* Logout button should be available
+
+Identify the tables
+Identify the controllers and views 
+Careate an application that does not break and works fine in all situations
+
+Ensure you handle all exceptions
+Ensure you follow all coding standards

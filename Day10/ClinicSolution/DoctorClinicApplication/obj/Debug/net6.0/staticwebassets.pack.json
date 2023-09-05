@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\images\\Doc1.JPG",
+      "PackagePath": "staticwebassets\\images\\Doc1.JPG"
+    },
+    {
+      "Id": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\images\\Doc2.JPG",
+      "PackagePath": "staticwebassets\\images\\Doc2.JPG"
+    },
+    {
       "Id": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -37,26 +37,34 @@ namespace DoctorClinicApplication.Controllers
             return View(appointments);
         }
         [HttpGet]
-        public IActionResult Create() 
+        [Route("BookAppointment/{id}")]
+        public IActionResult Create(int id) 
         {
             ViewBag.Doctors = GetDoctors();
-            return View();
+            Appointment appointment = new Appointment();
+            appointment.DoctorId = id;
+            appointment.AppointmentDateTime = DateTime.Now;
+            return View(appointment);
         }
         [HttpPost]
-        public IActionResult Create(Appointment appointment)
+        [Route("{controller}/BookAppointment/{id}")]
+        public IActionResult Create(int id,Appointment appointment)
         {
             ViewBag.Doctors = GetDoctors();
-            try
+            if (ModelState.IsValid)
             {
-                var myAppointment = _appointmentService.Add(appointment);
-                ViewBag.Registered = myAppointment.AppointmentNumber;
-                return View(myAppointment);
-            }
-            catch (Exception e)
-            {
+                try
+                {
+                    var myAppointment = _appointmentService.Add(appointment);
+                    ViewBag.Registered = myAppointment.AppointmentNumber;
+                    return View(myAppointment);
+                }
+                catch (Exception e)
+                {
 
-                ViewBag.ErrorMessage = e.Message;
-                _logger.LogInformation("Unable to add appointment");
+                    ViewBag.ErrorMessage = e.Message;
+                    _logger.LogInformation("Unable to add appointment");
+                }
             }
             return View(appointment);
         }

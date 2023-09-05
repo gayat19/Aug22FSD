@@ -29,6 +29,10 @@ namespace DoctorClinicApplication.Controllers
             var doctors = new List<Doctor>();
             try
             {
+               
+                if (TempData.Peek("un") == null)
+                    return RedirectToAction("UserLogin", "Login");
+                ViewBag.Username = TempData.Peek("un").ToString();
                 doctors = _doctorService.GetAllDoctor().ToList();
             }
             catch (Exception e)

@@ -18,5 +18,7 @@ namespace DoctorClinicApplication.Models
         [Required(ErrorMessage = "Patient's age has to be provided")]
         [Range(0, 100, ErrorMessage = "Invalid number for age")]
         public int Age { get; set; }
+
+        public ICollection<Appointment> Appointmnets { get; set; }
     }
 }

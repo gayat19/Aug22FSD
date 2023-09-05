@@ -29,6 +29,14 @@
                 </div>
             </div>
         </nav>
+        @if(TempData.Peek("un") != null)
+        {
+            <h2>Welcome @TempData.Peek("un")</h2>
+        }
+        else
+        {
+            <a asp-action="UserLogin" asp-controller="Login"  class="btn btn-primary">Login</a>
+        }
     </header>
     <div class="container">
         <main role="main" class="pb-3">

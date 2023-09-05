@@ -30,6 +30,7 @@ namespace DoctorClinicApplication
 
             builder.Services.AddScoped<IDoctorService, DoctorService>();
             builder.Services.AddScoped<IAppointmentService,AppointmentService>();
+            builder.Services.AddScoped<ILoginService,LoginService>();
 
 
             var app = builder.Build();
@@ -48,7 +49,7 @@ namespace DoctorClinicApplication
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Appointmnet}/{action=Create}/{id?}");
+                pattern: "{controller=Login}/{action=UserLogin}/{id?}");
 
             app.Run();
         }

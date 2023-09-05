@@ -15,9 +15,9 @@ namespace DoctorClinicApplication.Models
         public DateTime AppointmentDateTime { get; set; }
 
         [ForeignKey("PatientId")]
-        public Patient Patient { get; set; }
+        public Patient? Patient { get; set; }
 
         [ForeignKey("DoctorId")]
-        public Doctor Doctor { get; set; }
+        public Doctor? Doctor { get; set; }
     }
 }

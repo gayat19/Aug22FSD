@@ -1,0 +1,14 @@
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\bin\Debug\net6.0\UnderstandingTypesAndMore.exe
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\bin\Debug\net6.0\UnderstandingTypesAndMore.deps.json
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\bin\Debug\net6.0\UnderstandingTypesAndMore.runtimeconfig.json
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\bin\Debug\net6.0\UnderstandingTypesAndMore.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\bin\Debug\net6.0\UnderstandingTypesAndMore.pdb
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\UnderstandingTypesAndMore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\UnderstandingTypesAndMore.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\UnderstandingTypesAndMore.AssemblyInfo.cs
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\UnderstandingTypesAndMore.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\UnderstandingTypesAndMore.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\refint\UnderstandingTypesAndMore.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\UnderstandingTypesAndMore.pdb
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\UnderstandingTypesAndMore.genruntimeconfig.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day11\TypesAndMoreSolution\UnderstandingTypesAndMore\obj\Debug\net6.0\ref\UnderstandingTypesAndMore.dll

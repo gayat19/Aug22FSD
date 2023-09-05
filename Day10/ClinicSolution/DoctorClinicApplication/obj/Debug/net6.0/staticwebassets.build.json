@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HfYxbe5tJ2TjfaO+26Mhsm6MHP7YdgRYvTsiexslfRA=",
+  "Hash": "bsyFh94rTIU4ZZzlYIHrFzJWbSWy6dYNd4xkI4P1AqQ=",
   "Source": "DoctorClinicApplication",
   "BasePath": "_content/DoctorClinicApplication",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\images\\Doc1.JPG",
+      "SourceId": "DoctorClinicApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\",
+      "BasePath": "_content/DoctorClinicApplication",
+      "RelativePath": "images/Doc1.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Doc1.JPG"
+    },
+    {
+      "Identity": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\images\\Doc2.JPG",
+      "SourceId": "DoctorClinicApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\",
+      "BasePath": "_content/DoctorClinicApplication",
+      "RelativePath": "images/Doc2.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Doc2.JPG"
     },
     {
       "Identity": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day10\\ClinicSolution\\DoctorClinicApplication\\wwwroot\\js\\site.js",
