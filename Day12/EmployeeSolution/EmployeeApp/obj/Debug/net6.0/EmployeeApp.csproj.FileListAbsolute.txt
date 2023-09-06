@@ -1,0 +1,14 @@
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\bin\Debug\net6.0\EmployeeApp.exe
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\bin\Debug\net6.0\EmployeeApp.deps.json
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\bin\Debug\net6.0\EmployeeApp.runtimeconfig.json
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\bin\Debug\net6.0\EmployeeApp.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\bin\Debug\net6.0\EmployeeApp.pdb
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\EmployeeApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\EmployeeApp.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\EmployeeApp.AssemblyInfo.cs
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\EmployeeApp.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\EmployeeApp.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\refint\EmployeeApp.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\EmployeeApp.pdb
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\EmployeeApp.genruntimeconfig.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day12\EmployeeSolution\EmployeeApp\obj\Debug\net6.0\ref\EmployeeApp.dll

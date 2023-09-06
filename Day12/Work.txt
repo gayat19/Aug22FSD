@@ -1,0 +1,12 @@
+Unit Testing
+
+MOQ -> Mocking
+InMemoryDatabase -> Object
+
+https://leetcode.com/problems/two-sum/
+
+Class and objects - https://www.w3schools.com/cs/cs_classes.php
+Constructor - https://www.w3schools.com/cs/cs_constructors.php
+Overriding - https://dotnettutorials.net/lesson/why-we-should-override-equals-method/
+
+
