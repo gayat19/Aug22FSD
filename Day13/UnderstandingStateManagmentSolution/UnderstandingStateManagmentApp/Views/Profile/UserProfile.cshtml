@@ -1,0 +1,22 @@
+﻿@model UnderstandingStateManagmentApp.Models.User
+
+@{
+    ViewData["Title"] = "UserProfile";
+}
+
+<h1>UserProfile</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class = "col-sm-10">
+            <span>@ViewBag.User</span>
+        </dd>
+          <a asp-action="UserLogout" asp-controller="Profile" asp-route-un="@ViewBag.User" class="btn btn-primary">Logout</a>
+    </dl>
+</div>
+

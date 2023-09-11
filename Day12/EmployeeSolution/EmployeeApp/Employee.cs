@@ -12,7 +12,6 @@ namespace EmployeeApp
         public string Name { get; set; }
         public override bool Equals(object? obj)
         {
-           
             Employee emp1, emp2;
             emp1 = this;
             emp2 = obj as Employee;

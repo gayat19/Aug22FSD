@@ -1,0 +1,40 @@
+**Case Study Question: Building a Supplier and Product Management API in .NET Core**
+
+You are tasked with developing a Supplier and Product Management API using .NET Core. The API will be used to manage and retrieve information about suppliers and their associated products for a retail company.
+
+**Requirements:**
+
+1. **Supplier Management:**
+   - Create, read, update, and delete suppliers.
+   - Suppliers should have the following attributes: ID (auto-generated), Name, Email, and Phone Number.
+   - Ensure that email addresses are unique across suppliers.
+   
+2. **Product Management:**
+   - Create, read, update, and delete products.
+   - Products should have the following attributes: ID (auto-generated), Name, Description, Price, and Supplier ID (foreign key).
+   
+3. **Relationships:**
+   - Each product is associated with many supplier.
+   - Ensure that when a supplier is deleted, all their associated products are also deleted, or you can choose to set them to null.
+   
+4. **API Endpoints:**
+   - Implement RESTful API endpoints for suppliers and products.
+   - Include validation to handle bad requests (e.g., invalid data, missing fields).
+   - Implement  filtering for the list endpoints.(Example - Product within a price range, Search supplier by phone)
+   
+5. **Testing:**
+   - Write unit tests to ensure the correctness of your API's functionality.
+
+**Questions:**
+
+1. **API Design (35 points):** How would you design the API endpoints for managing suppliers and products, including the HTTP methods and URL routes? Provide a sample API endpoint structure.
+
+2. **Database Design (15 points):** What would be the database schema for storing supplier and product information? How would you ensure data integrity and enforce relationships between suppliers and products?
+
+3. **Validation and Error Handling (25 points):** Describe how you would handle validation and error responses in your API. What kind of error messages and status codes would you return in case of validation failures or exceptions?
+
+4. **Testing (25 points):** How would you approach testing your API, both unit testing and integration testing? What tools or libraries would you use, and what aspects of the API would you test?
+
+
+
+

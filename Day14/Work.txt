@@ -1,0 +1,79 @@
+Web API -> Application Programmin Interface
+
+Controller
+	Methods-> Prodive/ Take data- usually JSON
+Services
+Repository
+EF Core
+
+
+{
+"id":101,
+"name":"Ramu",
+"age":23
+}
+
+[
+{
+"id":101,
+"name":"Ramu",
+"age":23
+},
+{
+"id":102,
+"name":"Somu",
+"age":31
+},
+{
+"id":103,
+"name":"Bimu",
+"age":29
+}
+]
+
+{
+"id":101,
+"name":"Ramu",
+"age":23,
+"address":{
+"doorno":2,
+"streetName":"ABC",
+"city":"Delhi",
+"state":
+},
+"phone":"1234567890"
+}
+
+
+GET - 		Read
+PUT - 		Edit
+POST - 		Create
+DELETE - 	Delete
+
+API -> RESTful API
+RESTful Service ->Stateless, Layered, Caching-Support, Client/Server Architecture
+HTTP as protocol
+HTTP status codes
+   1XX - Information
+   2XX - Success
+   3XX - Redirection
+   4XX - Client Side Error
+   5XX - Server Side Error
+
+http://localhost:5159/api/Employee - GET - Get all
+http://localhost:5159/api/Employee/101 - Get By Id
+http://localhost:5159/api/Employee(pass an employee object in body) - POST - Create
+http://localhost:5159/api/Employee(pass an employee object in body) - PUT - Edit
+http://localhost:5159/api/Employee/101 - DELETE - Deletes teh employee with id 101
+
+
+
+
+
+
+
+
+
+
+
+
