@@ -1,0 +1,14 @@
+EF
+  Code First approch - create the classes -> create the tables ->  major in industry
+  Database First Approch -> create the tables -> create the classes
+
+Scaffold-DbContext "" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models
+
+User
+  Username
+  Password - byte[] - encrypt
+
+{
+  "username": "ramu",
+  "password": "ramu111"
+}

@@ -64,7 +64,15 @@ http://localhost:5159/api/Employee - GET - Get all
 http://localhost:5159/api/Employee/101 - Get By Id
 http://localhost:5159/api/Employee(pass an employee object in body) - POST - Create
 http://localhost:5159/api/Employee(pass an employee object in body) - PUT - Edit
-http://localhost:5159/api/Employee/101 - DELETE - Deletes teh employee with id 101
+http://localhost:5159/api/Employee/101 - DELETE - Deletes the employee with id 101
+
+
+Adding CORS - Enable
+Password Encryption
+
+
+Database First Approch
+
 
 
 

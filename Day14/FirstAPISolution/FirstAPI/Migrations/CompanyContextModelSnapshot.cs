@@ -46,7 +46,12 @@ namespace FirstAPI.Migrations
                     b.Property<float>("Salary")
                         .HasColumnType("real");
 
+                    b.Property<string>("Username")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("Username");
 
                     b.ToTable("employees");
 
@@ -67,6 +72,33 @@ namespace FirstAPI.Migrations
                             Phone = "9876543210",
                             Salary = 54321.6f
                         });
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.User", b =>
+                {
+                    b.Property<string>("Username")
+                        .HasColumnType("text");
+
+                    b.Property<byte[]>("Key")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.Property<byte[]>("Password")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.HasKey("Username");
+
+                    b.ToTable("users");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.Employee", b =>
+                {
+                    b.HasOne("FirstAPI.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Username");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }
