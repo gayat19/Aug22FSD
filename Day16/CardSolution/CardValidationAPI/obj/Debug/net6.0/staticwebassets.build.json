@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ygKrRVZvyBgJQk8PZ3Ztoexl/+8EiKhdCv5eL7xqH24=",
+  "Source": "CardValidationAPI",
+  "BasePath": "_content/CardValidationAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

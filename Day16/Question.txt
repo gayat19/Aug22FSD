@@ -1,0 +1,7 @@
+Take 10 numbers from user and identify if a number and its square are present. If yes then print the number
+
+https://www.w3schools.com/cs/exercise.php?filename=exercise_comments1
+
+Take a string from user the words seperated by comma(","). Seperate the words and find out the longest and the shortest word in it
+
+ Take a string from user the words seperated by comma(","). Seperate the words and find the words with the least number of repeating vowels. print the count and the word. If there is a tie then print all the words that tie for the least

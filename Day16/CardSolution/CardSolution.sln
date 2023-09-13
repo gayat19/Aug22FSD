@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardValidationAPI", "CardValidationAPI\CardValidationAPI.csproj", "{1E4948BF-5EE4-4864-8CF8-C8A64035AF82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardTesting", "CardTesting\CardTesting.csproj", "{6C1C6755-08C5-4602-98DE-CA6961EAA3E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E4948BF-5EE4-4864-8CF8-C8A64035AF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4948BF-5EE4-4864-8CF8-C8A64035AF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4948BF-5EE4-4864-8CF8-C8A64035AF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4948BF-5EE4-4864-8CF8-C8A64035AF82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1C6755-08C5-4602-98DE-CA6961EAA3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1C6755-08C5-4602-98DE-CA6961EAA3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1C6755-08C5-4602-98DE-CA6961EAA3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1C6755-08C5-4602-98DE-CA6961EAA3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AE36101-A391-4E22-89C0-BE545664A479}
+	EndGlobalSection
+EndGlobal

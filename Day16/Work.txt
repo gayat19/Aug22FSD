@@ -1,0 +1,34 @@
+Validate a Card number
+4477 4683 4311 3002
+2003 1134 3864 7744- Reverse the number
+2+0*2+0+3*2+1+1*2+3+4*2+3+8*2+6+4*2+7+7*2+4+4*2 - identify the even position numbers and multiply by 2
+2+0+0+6+1+2+3+8+3+16+6+8+7+14+4+8 - Multiplied
+2+0+0+6+1+2+3+8+3+(1+6)+6+8+7+(1+4)+4+8 - If results in 2 digit number sum them up
+2+0+0+6+1+2+3+8+3+7+6+8+7+5+4+8 - Sum up all the values
+70%10-> Divide by 10 if 0 remainder then valid card number
+
+
+Model - 
+Card
+  string - cardnumber
+CardResult
+  string - CardNumber
+  bool - IsValid
+
+ICardService
+  bool ValidateCard(string ccNumber)
+
+CardService
+  bool ValidateCard(string ccNumber)
+    *bool CheckCardNumber(string ccNumber)
+    *string ReverseCardnumner(string ccNumber)
+    *int[] ConvertStringToArray(string ccNumber)
+    *int[] IdentifyEvenPositionAndProcess(int[] ccNumber)
+    *int SumTheArray(int[] ccNumber)
+    *bool CheckMod(int ccNumber)
+
+CardContrller
+  Post(Card card) -> CardResult
+
+https://www.postman.com/downloads/
+	
