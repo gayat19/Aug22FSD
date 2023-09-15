@@ -40,3 +40,10 @@ D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bi
 D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Npgsql.dll
 D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day14\FirstAPISolution\FirstAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

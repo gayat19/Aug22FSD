@@ -87,6 +87,9 @@ namespace FirstAPI.Migrations
                         .IsRequired()
                         .HasColumnType("bytea");
 
+                    b.Property<string>("Role")
+                        .HasColumnType("text");
+
                     b.HasKey("Username");
 
                     b.ToTable("users");

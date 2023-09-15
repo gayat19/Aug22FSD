@@ -1,6 +1,7 @@
 ﻿using FirstAPI.Interfaces;
 using FirstAPI.Models;
 using FirstAPI.Models.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,7 @@ namespace FirstAPI.Controllers
         {
             _employeeService = employeeService;
         }
+        
         [HttpGet]
         public ActionResult Get()
         {
@@ -26,6 +28,7 @@ namespace FirstAPI.Controllers
             }
             return Ok(result);
         }
+        [Authorize(Roles ="Manager")]
         [HttpPost]
         public ActionResult Post(Employee employee)
         {

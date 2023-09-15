@@ -1,0 +1,13 @@
+<div>
+    <!-- Interpollation componenet to html -> oneway binding -->
+    Employee Name : {{name}}
+    <br>
+    Click count: {{counter}}
+    <br>
+    <!-- Property binding -  componenet to html -> oneway binding -->
+    <input [value]="name">
+    <br>
+    <!-- Event Binding - html to component -> oneway communication -->
+    <button (click)="handleClick()" class="btn btn-primary">Click me</button>
+    <i (click)="changeLook()" [class]="classToggle"></i>
+</div>

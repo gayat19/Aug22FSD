@@ -12,6 +12,6 @@ namespace FirstAPI.Models
         public bool? IsActive { get; set; }
         public string? Username { get; set; }
         [ForeignKey("Username")]
-        public User User { get; set; }
+        public User? User { get; set; }
     }
 }

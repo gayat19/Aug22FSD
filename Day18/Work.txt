@@ -1,0 +1,75 @@
+Model
+   User
+     Username string
+     Password byte[]
+     Key byte[]
+
+   Product
+     Id
+     Name
+     Price
+     Quantity
+
+   UserDTO
+     Username string
+     Password string?
+     Token string?
+
+1) Model
+2) Context - Migration
+3) Interfaces
+4) Repository
+5) Services
+6) Controller
+
+
+{
+  "username": "ramu",
+  "password": "ramu111"
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFtdSIsIm5iZiI6MTY5NDY3NjI1MiwiZXhwIjoxNjk0NzYyNjUyLCJpYXQiOjE2OTQ2NzYyNTJ9.m3uL3hfEVaK2JbeeQvCaPdNpXcp5CRjGI2KoCy3pzRM 
+
+
+{
+  "username": "gimu",
+  "password": "gimu123",
+  "role": "Manager"
+}
+
+
+{
+  "username": "fomu",
+  "password": fomu123,
+ "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ2ltdSIsInJvbGUiOiJNYW5hZ2VyIiwibmJmIjoxNjk0Njc3NDk0LCJleHAiOjE2OTQ3NjM4OTQsImlhdCI6MTY5NDY3NzQ5NH0.dm9f2NoIuiYa3qOszkv1xqYJBJuX0a4qPf9kGqVySms",
+  "role": Manager
+}
+
+
+	
+Response body
+Download
+{
+  "username": "poku",
+  "password": "poku123"
+ "role": "Employee"
+}
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZmltdSIsIm5iZiI6MTY5NDY3NjY2NSwiZXhwIjoxNjk0NzYzMDY1LCJpYXQiOjE2OTQ2NzY2NjV9.tXGdp4T3fvO19wfQBLr78qa2aJqHCyd_tOkx7wl9Oic",
+  "role": Employee
+}
+
+
+
+Employee - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicG9rdSIsInJvbGUiOiJFbXBsb3llZSIsIm5iZiI6MTY5NDY3Nzc0MiwiZXhwIjoxNjk0NzY0MTQyLCJpYXQiOjE2OTQ2Nzc3NDJ9.fVpC6-fYNTWU74pNUisYVfAN_w2bbQ7mokzUvKc8bd0
+
+
+
+
+{
+  "name": "Fomu",
+  "age": 21,
+  "phone": "9876543210",
+  "salary": 325450,
+  "isActive": true,
+  "username": "fomu"
+}

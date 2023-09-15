@@ -1,0 +1,27 @@
+SPA - > Single Page Application
+*jQuery + AJAX
+*angular -> angularJS -> angular2->
+MEAN -> Mongo+Express+Angular+Node
+MERN -> Mongo+Express+React+Node
+---------------------------------------
+https://nodejs.org/en
+Download and install node
+in cmd prompt => 
+	node -v
+	npm -v
+
+https://angular.io/tutorial/first-app
+in cmd prompt => 
+	npm install -g @angular/cli
+	ng version
+
+https://code.visualstudio.com/download
+-------------------------------------------
+in you file explorer go to the destination that you want to save your angular app
+Open cmd prompt there
+ng new <appname>
+give "y" for routing
+select "CSS" for styling
+--------------------------------------------------
+In visual studio code
+  Hit File-> open Folder-> select your app folder
