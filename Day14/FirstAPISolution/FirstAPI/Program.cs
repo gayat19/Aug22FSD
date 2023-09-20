@@ -68,6 +68,13 @@ namespace FirstAPI
                             IssuerSigningKey = new SymmetricSecurityKey(key)
                         };
                     });
+            builder.Services.AddCors(opts =>
+            {
+                opts.AddPolicy("MyCors", options =>
+                {
+                    options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                });
+            });
 
             builder.Services.AddDbContext<CompanyContext>(opts =>
             {
@@ -88,9 +95,10 @@ namespace FirstAPI
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("MyCors");
             app.UseAuthentication();
             app.UseAuthorization();
-
+            
 
             app.MapControllers();
 

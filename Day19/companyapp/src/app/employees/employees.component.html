@@ -1,0 +1,16 @@
+<div *ngIf="employees.length > 0 else noemployee"  >
+    <div class="alert alert-primary" *ngFor="let employee of employees">
+
+        Employee Id: {{employee.id}}
+        <br/>
+        Employee Name : {{employee.name}}
+        <br/>
+        Employee Age : {{employee.age}}
+    </div>
+</div>
+    
+<ng-template #noemployee >
+    <div class="alert alert-warning">
+        No employees yet
+    </div>
+</ng-template>

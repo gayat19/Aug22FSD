@@ -1,0 +1,13 @@
+<div class="alert alert-dark">
+    <!-- Employee Id: <input class="form-control" type="number" [value]="employee.id" #eid 
+    (change)="changeId(eid.value)">
+    <br/> -->
+    Employee Name : <input class="form-control" type="text" [(ngModel)]="employee.name">
+    <br/>
+    Employee Salary : <input class="form-control" type="number" [(ngModel)]="employee.salary">
+    <br/>
+    Employee Age : <input class="form-control" type="number" [(ngModel)]="employee.age">
+    <br/>
+    <button  (click)="addEmployee()" class="btn btn-dark"> Add Employee<span [class]="className"></span></button>
+</div>
+

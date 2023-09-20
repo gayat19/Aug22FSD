@@ -37,6 +37,8 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFtdSIsIm5iZiI6MTY5NDY3NjI1Miw
   "role": "Manager"
 }
 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ2ltdSIsInJvbGUiOiJNYW5hZ2VyIiwibmJmIjoxNjk1MTg3MDQxLCJleHAiOjE2OTUyNzM0NDEsImlhdCI6MTY5NTE4NzA0MX0.Kr7Bd3kX-nY64nTR3DntaaKnWyDzfnpDuMsCb0I8Mtg
+
 
 {
   "username": "fomu",

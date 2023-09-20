@@ -2,11 +2,13 @@
 using FirstAPI.Models;
 using FirstAPI.Models.DTOs;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstAPI.Controllers
 {
+    [EnableCors("MyCors")]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase

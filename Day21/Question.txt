@@ -1,0 +1,6 @@
+Create an API that allows used to Get and add products(id, name, price, quantity)
+Repository pattern, Service are manidotory
+
+Consume the API in an angular application. 
+   Show the product only if the quantity is more than 0
+   

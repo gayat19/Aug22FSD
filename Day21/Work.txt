@@ -1,0 +1,8 @@
+http://localhost:5159/api/Employee
+
+Observable
+  Sender->
+  Subscriber<-
+HttpClient Module
+
+GET+POST
