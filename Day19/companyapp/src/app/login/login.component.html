@@ -1,0 +1,28 @@
+<div>
+    <table>
+        <tr>
+            <td>
+                <label class="form-control">Usename</label>
+            </td>
+            <td>
+                <input type="text" class="form-control" [(ngModel)]="user.username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Password</label>
+            </td>
+            <td>
+                <input type="password" class="form-control" [(ngModel)]="user.password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button (click)="loginClick()" class="btn btn-primary">Login</button>
+            </td>
+            <td>
+                <button class="btn btn-danger">Reset</button>
+            </td>
+        </tr>
+    </table>
+</div>

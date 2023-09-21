@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+       <app-employee> </app-employee>
+      </div>
+      <div class="col-sm">
+        <app-employees> </app-employees>
+       </div>
+       <div class="col-sm">
+        <app-delete-emp></app-delete-emp>
+       </div>
+    </div>
+</div>
+
+
+
+Routing:
+    Navigation
+
+1- map the url - component => Routes
+2- mark teh position where the component has to load => Router outlet
+3- creating the link
+
+Login-> Save the key to the local storage
+Route me to another component

@@ -9,7 +9,10 @@ export class EmployeeWebService{
 
     }
     getToken():string{
-        return "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ2ltdSIsInJvbGUiOiJNYW5hZ2VyIiwibmJmIjoxNjk1MTg3MDQxLCJleHAiOjE2OTUyNzM0NDEsImlhdCI6MTY5NTE4NzA0MX0.Kr7Bd3kX-nY64nTR3DntaaKnWyDzfnpDuMsCb0I8Mtg";
+        var token = "";
+        token = sessionStorage.getItem("token") as string;
+        return token;
+
     }
     getEmployees(){
         return this.httpClient.get("http://localhost:5159/api/Employee");
@@ -23,5 +26,14 @@ export class EmployeeWebService{
         console.log(employee);
         const requestOptions = {headers:header};
         return this.httpClient.post("http://localhost:5159/api/Employee",employee,requestOptions);
+    }
+    deleteEmployee(eid:number){
+        const header = new HttpHeaders({
+            'Content-Type':'application/json',
+            'Authorization':'Bearer '+this.getToken()
+        });
+        console.log(eid);
+        const requestOptions = {headers:header};
+        return this.httpClient.put("http://localhost:5159/api/Employee/UpdateStatus?id="+eid,requestOptions);
     }
 }

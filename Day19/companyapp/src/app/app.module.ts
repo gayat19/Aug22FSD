@@ -13,6 +13,8 @@ import { EmployeeService } from './services/employee.service';
 import { DeleteEmpComponent } from './delete-emp/delete-emp.component';
 import {HttpClientModule} from '@angular/common/http';
 import { EmployeeWebService } from './services/employeeweb.service';
+import { LoginComponent } from './login/login.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { EmployeeWebService } from './services/employeeweb.service';
     ThirdComponent,
     EmployeeComponent,
     EmployeesComponent,
-    DeleteEmpComponent
+    DeleteEmpComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,7 @@ import { EmployeeWebService } from './services/employeeweb.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [EmployeeService,EmployeeWebService],
+  providers: [EmployeeService,EmployeeWebService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
