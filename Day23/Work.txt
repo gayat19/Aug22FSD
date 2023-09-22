@@ -1,0 +1,7 @@
+Routes
+   Protect the route
+
+
+Loged in he can add the employee
+
+npm install @auth0/angular-jwt

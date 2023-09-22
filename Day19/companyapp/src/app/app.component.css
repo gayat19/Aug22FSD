@@ -1,3 +1,7 @@
 h1{
     text-align: center;
 }
+.logout{
+    position: absolute;
+    float: right;
+}

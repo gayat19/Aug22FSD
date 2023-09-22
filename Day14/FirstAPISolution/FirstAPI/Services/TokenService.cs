@@ -27,7 +27,7 @@ namespace FirstAPI.Services
             var tokenDescription = new SecurityTokenDescriptor();
             //Describing the token
             tokenDescription.Subject = subject;
-            tokenDescription.Expires = DateTime.UtcNow.AddDays(1);
+            tokenDescription.Expires = DateTime.UtcNow.AddMinutes(5);
             var signature = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature);
             tokenDescription.SigningCredentials = signature;
             var tokenHandler = new JwtSecurityTokenHandler();

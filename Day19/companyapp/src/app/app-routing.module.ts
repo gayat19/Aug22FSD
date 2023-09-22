@@ -6,15 +6,19 @@ import { EmployeeComponent } from './employee/employee.component';
 import { DeleteEmpComponent } from './delete-emp/delete-emp.component';
 import { LoginComponent } from './login/login.component';
 import { FirstComponent } from './first/first.component';
+import { AuthGuard } from './services/auth.service';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
-  {path:'home',component:SecondComponent},
+  {path:'menu',component:MenuComponent,children:[
+    {path:'home',component:SecondComponent},
   {path:'employees',component:EmployeesComponent},
-  {path:'add',component:EmployeeComponent},
+  {path:'add',component:EmployeeComponent,canActivate:[AuthGuard]},
   {path:'delete',component:DeleteEmpComponent,children:[
     {path:'first',component:FirstComponent}
+  ]}
   ]},
-  {path:'login',component:LoginComponent}
+  {path:'',component:LoginComponent},
   
 ];
 

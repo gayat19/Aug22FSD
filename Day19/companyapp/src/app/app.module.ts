@@ -15,6 +15,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { EmployeeWebService } from './services/employeeweb.service';
 import { LoginComponent } from './login/login.component';
 import { UserService } from './services/user.service';
+import { AuthGuard } from './services/auth.service';
+import { JwtModule } from '@auth0/angular-jwt';
+import { MenuComponent } from './menu/menu.component';
+
+export function tokenGetter(){
+  return sessionStorage.getItem("token");
+}
 
 @NgModule({
   declarations: [
@@ -25,15 +32,22 @@ import { UserService } from './services/user.service';
     EmployeeComponent,
     EmployeesComponent,
     DeleteEmpComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    JwtModule.forRoot({
+      config:{
+        tokenGetter:tokenGetter,
+        allowedDomains:["http://localhost:5159/"]
+      }
+    })
   ],
-  providers: [EmployeeService,EmployeeWebService,UserService],
+  providers: [EmployeeService,EmployeeWebService,UserService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

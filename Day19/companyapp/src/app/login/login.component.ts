@@ -20,7 +20,7 @@ loginClick(){
     this.user = result as User;
     sessionStorage.setItem("token",this.user.token);
     alert("Login success");
-    this.router.navigateByUrl("home")
+    this.router.navigateByUrl("menu")
   })
 }
 }

@@ -23,3 +23,5 @@ Routing:
 
 Login-> Save the key to the local storage
 Route me to another component
+
+[Authorize(Roles = "Administrator, User")]
