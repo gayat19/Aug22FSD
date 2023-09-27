@@ -7,5 +7,6 @@ namespace PizzaStoreApp.Interfaces
     {
         public ICollection<PizzaWithPic> GetPizzasByRange(int min, int max);
         public ICollection<PizzaWithPic> GetPizzaByType(string type);
+        public ICollection<PizzaWithPic> GetAllPizzas();
     }
 }

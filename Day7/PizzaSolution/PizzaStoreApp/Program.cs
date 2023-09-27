@@ -13,6 +13,8 @@ namespace PizzaStoreApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
             #region InjectUSerdefinedServices
             builder.Services.AddScoped<IRepository<int,PizzaWithPic>,PizzaRepository>();
             builder.Services.AddScoped<IPizzaService,PizzaServicecs>();

@@ -19,6 +19,11 @@ namespace PizzaStoreApp.Services
             return result;
             
         }
+
+        public ICollection<PizzaWithPic> GetAllPizzas()
+        {
+            return _repository.GetAll();
+        }
         #region GetPizzaByType
         /// <summary>
         /// This method will get the pizzas of the type that you provide(Veg/Non-Veg)

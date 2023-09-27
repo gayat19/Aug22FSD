@@ -9,3 +9,14 @@ E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrar
 E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\refint\PIzzaStoreModelLibrary.dll
 E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.pdb
 E:\Corp\Cognixia\22Aug2023\Participants\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\ref\PIzzaStoreModelLibrary.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\bin\Debug\net6.0\PIzzaStoreModelLibrary.deps.json
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\bin\Debug\net6.0\PIzzaStoreModelLibrary.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\bin\Debug\net6.0\PIzzaStoreModelLibrary.pdb
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.AssemblyInfo.cs
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\refint\PIzzaStoreModelLibrary.dll
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\PIzzaStoreModelLibrary.pdb
+D:\Data\d drive\Corp\Colabra\Aug2023\Aug22FSD\Day7\PizzaSolution\PIzzaStoreModelLibrary\obj\Debug\net6.0\ref\PIzzaStoreModelLibrary.dll

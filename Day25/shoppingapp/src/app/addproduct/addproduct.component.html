@@ -1,0 +1,54 @@
+<div>
+    <table>
+        <tr>
+            <td>
+                <label class="form-control">Product Name</label>
+            </td>
+            <td>
+                <input class="form-control" [(ngModel)]="product.name" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Product Price</label>
+            </td>
+            <td>
+                <input class="form-control" type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Product Qantity</label>
+            </td>
+            <td>
+                <input class="form-control" type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Product Type</label>
+            </td>
+            <td>
+               <input name="type" type="radio" checked (change)="changeVeg()" class="radio" >Veg
+               <input name="type" type="radio" (change)="changeNonVeg()" class="radio">Non-Veg
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="form-control">Product Pic</label>
+            </td>
+            <td>
+                <input class="form-control" (change)="assignFile(pic)" #pic  type="file">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class="btn btn-success">Add</button>
+            </td>
+            <td>
+                <button class="btn btn-danger">Cancel</button>
+            </td>
+        </tr>
+    </table>
+</div>

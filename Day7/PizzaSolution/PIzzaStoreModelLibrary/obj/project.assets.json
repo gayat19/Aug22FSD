@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Corp\\Cognixia\\22Aug2023\\Participants\\Day7\\PizzaSolution\\PIzzaStoreModelLibrary\\PIzzaStoreModelLibrary.csproj",
+      "projectUniqueName": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day7\\PizzaSolution\\PIzzaStoreModelLibrary\\PIzzaStoreModelLibrary.csproj",
       "projectName": "PIzzaStoreModelLibrary",
-      "projectPath": "E:\\Corp\\Cognixia\\22Aug2023\\Participants\\Day7\\PizzaSolution\\PIzzaStoreModelLibrary\\PIzzaStoreModelLibrary.csproj",
+      "projectPath": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day7\\PizzaSolution\\PIzzaStoreModelLibrary\\PIzzaStoreModelLibrary.csproj",
       "packagesPath": "C:\\Users\\gayat\\.nuget\\packages\\",
-      "outputPath": "E:\\Corp\\Cognixia\\22Aug2023\\Participants\\Day7\\PizzaSolution\\PIzzaStoreModelLibrary\\obj\\",
+      "outputPath": "D:\\Data\\d drive\\Corp\\Colabra\\Aug2023\\Aug22FSD\\Day7\\PizzaSolution\\PIzzaStoreModelLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -66,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
