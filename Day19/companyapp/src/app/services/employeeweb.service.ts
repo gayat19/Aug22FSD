@@ -36,4 +36,13 @@ export class EmployeeWebService{
         const requestOptions = {headers:header};
         return this.httpClient.put("http://localhost:5159/api/Employee/UpdateStatus?id="+eid,requestOptions);
     }
+    updateEmployee(eid:number){
+        const header = new HttpHeaders({
+            'Content-Type':'application/json',
+            'Authorization':'Bearer '+this.getToken()
+        });
+        console.log(eid);
+        const requestOptions = {headers:header};
+        return this.httpClient.put("http://localhost:5159/api/Employee/UpdateStatus?id="+eid,requestOptions);
+    }
 }

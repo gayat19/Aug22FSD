@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { FirstComponent } from './first/first.component';
 import { AuthGuard } from './services/auth.service';
 import { MenuComponent } from './menu/menu.component';
+import { OneComponent } from './one/one.component';
+import { TwoComponent } from './two/two.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 const routes: Routes = [
   {path:'menu',component:MenuComponent,children:[
@@ -19,7 +22,9 @@ const routes: Routes = [
   ]}
   ]},
   {path:'',component:LoginComponent},
-  
+  {path:'one',component:OneComponent},
+  {path:'two/:g3',component:TwoComponent},
+  {path:'update/:eid',component:UpdateEmployeeComponent}
 ];
 
 @NgModule({

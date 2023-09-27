@@ -1,0 +1,10 @@
+<p>Employee Name : {{ename}}</p>
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="employee.pic" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{employee.name}}</h5>
+      <p class="card-text">{{employee.salary}}</p>
+      
+    </div>
+  </div>
+  <button (click)="raiseEvent()" class="btn btn-success">Click to check</button>

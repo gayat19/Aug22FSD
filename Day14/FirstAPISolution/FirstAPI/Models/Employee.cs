@@ -13,5 +13,6 @@ namespace FirstAPI.Models
         public string? Username { get; set; }
         [ForeignKey("Username")]
         public User? User { get; set; }
+        public string? Pic { get; set; }
     }
 }

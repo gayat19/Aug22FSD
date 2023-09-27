@@ -30,7 +30,7 @@ namespace FirstAPI.Controllers
             }
             return Ok(result);
         }
-        [Authorize(Roles ="Manager")]
+        //[Authorize(Roles ="Manager")]
         [HttpPost]
         public ActionResult Post(Employee employee)
         {

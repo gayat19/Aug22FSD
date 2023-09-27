@@ -3,7 +3,8 @@ export class Employee{
         public name:string="",
         public salary:number =0,
         public age:number=18,
-        public isActive:boolean = false) 
+        public isActive:boolean = false,
+        public pic:string="") 
         {
 
         }

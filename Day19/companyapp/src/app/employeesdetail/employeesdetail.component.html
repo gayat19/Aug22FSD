@@ -1,0 +1,8 @@
+<p>employeesdetail works!</p>
+<input type="text" [(ngModel)]="employeename">
+<hr>
+<div *ngFor="let emp of employees">
+    <app-employeedetail (checkCom)="showData($event)" [employee]="emp">
+
+    </app-employeedetail>
+</div>
