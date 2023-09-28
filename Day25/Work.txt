@@ -1,3 +1,29 @@
+New Application
+   Product
+     id- (not from the user)
+     Name
+     Quantity
+     Price
+     Description
+
+
+npm install bootstrap --save
+
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+export class Product {
+    constructor(public id:number=0,
+        public name:string = "",
+        public price:number=0,
+        public quantity:number=0,
+        public pic:string="",
+        public type:string="Veg"){
+
+        }
+}
+-----------------------------------------------
+
 <div>
  <form #productForm="ngForm" >
     <table>
@@ -70,23 +96,55 @@
     </table>
  </form>
  <div *ngIf="productForm.form.invalid && showErrors">
-    {{(productForm.form.controls['pname'].errors ?"Check the name":"") | uppercase}}
+    {{productForm.form.controls['pname'].errors ?"Check the name":""}}
     <br>
-    {{(productForm.form.controls['pprice'].errors?"Check the price":"") | lowercase}}
+    {{productForm.form.controls['pprice'].errors?"Check the price":""}}
     <br>
-    {{productForm.form.controls['pquantity'].errors?"Check the quantity ":""}}
-    <br>
-    {{product | json}}
+    {{productForm.form.controls['pquantity'].errors?"Check the quantity":""}}
  </div>
 </div>
-<hr>
-order Number : {{order.id}}
-<br>
-order Amount : {{order.amount | currency:'INR'}}
-<br>
-order Date : {{order.orderedDate | date:'dd-MMMM-yy'}}
-<br>
-<div>
+----------------------------------------------------------------
+import { Component, ViewChild } from '@angular/core';
+import { Product } from '../models/product';
+import {NgForm} from '@angular/forms';
 
-    order Remarks : {{order.remarks |remarks}}
-</div>
+@Component({
+  selector: 'app-addproduct',
+  templateUrl: './addproduct.component.html',
+  styleUrls: ['./addproduct.component.css']
+})
+export class AddproductComponent {
+  product:Product =new Product();
+  showErrors:boolean = false;
+  @ViewChild("productForm") productForm:any
+  constructor(){
+    
+  }
+
+  changeVeg(){
+    this.product.type="Veg";
+  }
+  changeNonVeg(){
+    this.product.type="Non-Veg";
+  }
+  assignFile(pic:any){
+    this.product.pic = "/assets/images/"+pic.files[0].name;
+  }
+  addProduct(){
+    //console.log()
+    //console.log(this.product)
+    console.log(this.productForm)
+    if(this.productForm.valid)
+    {
+      this.showErrors=false;
+      alert("Added");
+    }
+      
+    else
+    {
+      this.showErrors=true;
+      alert("Details are incomplete")
+    }
+      
+  }
+}
