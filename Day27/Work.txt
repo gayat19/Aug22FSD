@@ -1,0 +1,26 @@
+FE
+  HTML+CSS+jQuert+AJAX
+  MVC - .Net, Java, python
+  Angular
+  React
+  Vue
+  Flutter
+  Xamarin
+  MAUI
+  ReactNative
+  
+Backend
+  Java/.Net /python
+  Express/Node
+
+Database
+  Oracle - RDBMS
+  ProtGRE - RDBMS 
+  MySQL - RDBMS
+  MSSQL - RDBMS
+  Mongo - No-SQL - json
+
+
+React
+  - 
+  
